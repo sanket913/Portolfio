@@ -1,0 +1,55 @@
+/* A compact floating navigation system shared by the homepage and detail routes. */
+body:has(.portfolio-v3) .header.nav-shell,body:has(.detail-main) .header.nav-shell{position:sticky;top:10px;z-index:90;display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(1480px,calc(100% - 36px));height:74px;margin:10px auto 12px;padding:8px 10px 8px 12px;border:1px solid #e4d9e3;border-radius:21px;background:#fffdf9e8;box-shadow:0 13px 38px #50335616,0 1px 0 #fff inset;backdrop-filter:blur(24px) saturate(1.4);-webkit-backdrop-filter:blur(24px) saturate(1.4)}
+.nav-brand{display:flex;align-items:center;gap:10px;min-width:188px;min-height:48px;color:#302534}
+body:has(.portfolio-v3) .nav-brand .brand-symbol,body:has(.detail-main) .nav-brand .brand-symbol{width:48px;height:48px;min-width:48px;min-height:48px;border-radius:14px;background:linear-gradient(145deg,#694871,#3e2c47);box-shadow:0 5px 12px #4e315032}
+.nav-brand .brand-symbol img{width:38px;height:38px}
+.nav-brand-copy{display:flex;flex-direction:column;gap:0;min-width:0;white-space:nowrap}
+.nav-brand-copy strong{font-size:18px;line-height:1.05;font-weight:750;letter-spacing:-.065em;color:#302534}
+.nav-brand-copy small{font-size:8px;line-height:1.4;font-weight:700;letter-spacing:.08em;color:#927e91;margin-top:5px}
+body:has(.portfolio-v3) .nav.nav-sheet,body:has(.detail-main) .nav.nav-sheet{position:static;display:flex;align-items:center;gap:2px;min-width:0;margin:0;padding:4px;border:1px solid #ede6ec;border-radius:14px;background:#f5f0f4;box-shadow:inset 0 1px 3px #4d315011}
+body:has(.portfolio-v3) .nav.nav-sheet>a,body:has(.detail-main) .nav.nav-sheet>a{position:relative;display:flex;align-items:center;justify-content:center;gap:0;min-height:39px;padding:0 clamp(8px,.86vw,14px);border-radius:10px;color:#6c5d6e;font-size:12px;font-weight:650;letter-spacing:-.025em;white-space:nowrap;transition:background .22s,color .22s,box-shadow .22s,transform .22s}
+body:has(.portfolio-v3) .nav.nav-sheet>a:hover,body:has(.detail-main) .nav.nav-sheet>a:hover{background:#fff;color:#4e3553}
+body:has(.portfolio-v3) .nav.nav-sheet>a[aria-current],body:has(.detail-main) .nav.nav-sheet>a[aria-current]{background:#fff;color:#54385b;box-shadow:0 2px 8px #4d31501b,0 0 0 1px #e9dde8}
+.nav-link-index,.nav-sheet-top,.nav-sheet-foot,.nav-sheet .touch-menu-arrow{display:none}
+.nav-end{display:flex;align-items:center;gap:11px;margin-left:auto;flex-shrink:0}
+.nav-availability{display:flex;align-items:center;gap:7px;color:#786b7b;font-size:8px;font-weight:750;letter-spacing:.09em;white-space:nowrap}
+.nav-availability i{width:6px;height:6px;background:#73ab8a;border-radius:50%;box-shadow:0 0 0 4px #73ab8a27}
+body:has(.portfolio-v3) .nav-end .nav-contact,body:has(.detail-main) .nav-end .nav-contact{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:46px;margin:0;padding:0 15px 0 17px;border:0;border-radius:13px;background:#654568;color:#fff;font-size:12px;font-weight:700;letter-spacing:-.015em;white-space:nowrap;box-shadow:0 6px 15px #6545682c;transition:transform .2s,background .2s}
+body:has(.portfolio-v3) .nav-end .nav-contact:hover,body:has(.detail-main) .nav-end .nav-contact:hover{background:#4e3553;transform:translateY(-2px)}
+.nav-end .menu-toggle{display:none}
+.nav-scrim{display:none}
+@media(max-width:1399px){.nav-availability{display:none}.nav-brand{min-width:165px}body:has(.portfolio-v3) .nav.nav-sheet>a,body:has(.detail-main) .nav.nav-sheet>a{padding-inline:10px}}
+@media(max-width:1199px){
+ body:has(.portfolio-v3) .header.nav-shell,body:has(.detail-main) .header.nav-shell{top:calc(8px + env(safe-area-inset-top,0px));width:calc(100% - 24px);height:66px;margin:8px auto 10px;padding:7px 8px;border-radius:19px;gap:8px}
+ .nav-brand{min-width:0;min-height:48px;gap:9px}.nav-brand-copy strong{font-size:17px}.nav-brand-copy small{font-size:8px}
+ body:has(.portfolio-v3) .nav.nav-sheet,body:has(.detail-main) .nav.nav-sheet{display:none;position:absolute;top:calc(100% + 10px);right:0;left:auto;width:min(440px,calc(100vw - 24px));max-width:none;max-height:calc(100svh - 104px - env(safe-area-inset-top,0px));overflow:auto;margin:0;padding:18px;flex-direction:column;align-items:stretch;gap:0;border:1px solid #e5d7e4;border-radius:25px;background:#fffefa;box-shadow:0 25px 70px #2d1d3447;scrollbar-width:thin}
+ body:has(.portfolio-v3) .nav.nav-sheet.open,body:has(.detail-main) .nav.nav-sheet.open{display:flex}
+ .nav-sheet-top{display:flex;justify-content:space-between;gap:10px;padding:5px 4px 15px;color:#8e718e;font-size:9px;font-weight:750;letter-spacing:.1em}
+ body:has(.portfolio-v3) .nav.nav-sheet>a,body:has(.detail-main) .nav.nav-sheet>a{display:grid;grid-template-columns:30px minmax(0,1fr) 22px;gap:12px;justify-content:initial;min-height:62px;padding:0 8px;border-radius:0;border-top:1px solid #eee7ec;background:transparent;color:#3b2e3e;font-size:23px;font-weight:650;letter-spacing:-.05em;white-space:normal}
+ body:has(.portfolio-v3) .nav.nav-sheet>a:hover,body:has(.detail-main) .nav.nav-sheet>a:hover{background:#f9f4f8;color:#5d3d63}
+ body:has(.portfolio-v3) .nav.nav-sheet>a[aria-current],body:has(.detail-main) .nav.nav-sheet>a[aria-current]{background:#f6edf5;color:#674269;box-shadow:none}
+ .nav-sheet .nav-link-index{display:block;font-size:10px;font-weight:750;letter-spacing:.04em;color:#9e859f}.nav-sheet .touch-menu-arrow{display:block;color:#936f97}.nav-sheet .nav-link-title{min-width:0}
+ .nav-sheet-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #eee7ec;padding:20px 5px 5px;color:#948294;font-size:8px;font-weight:750;letter-spacing:.08em}
+ body:has(.portfolio-v3) .nav.nav-sheet .nav-sheet-foot a,body:has(.detail-main) .nav.nav-sheet .nav-sheet-foot a{display:flex;align-items:center;gap:6px;padding:9px 11px;border-radius:9px;background:#654568;color:#fff;font-size:11px;font-weight:700;letter-spacing:0;white-space:nowrap}
+ .nav-end{gap:7px}.nav-end .menu-toggle{display:grid;place-items:center;width:46px;height:46px;margin:0;padding:0;border:1px solid #e7dce7;border-radius:13px;background:#f6f1f6;color:#593c61}.nav-end .menu-toggle svg{width:20px;height:20px}
+ body:has(.portfolio-v3) .nav-end .nav-contact,body:has(.detail-main) .nav-end .nav-contact{min-height:46px;padding:0 14px;gap:12px}
+ .nav-scrim{display:block;position:fixed;inset:0;z-index:82;border:0;background:#24192a69;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);cursor:default}
+ body:has(.portfolio-v3) .app-tabbar,body:has(.detail-main) .app-tabbar{display:flex;position:fixed;z-index:85;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));width:min(510px,calc(100% - 24px));max-width:510px;margin-inline:auto;padding:7px 8px 6px;gap:2px;border:1px solid #ffffffb8;border-radius:26px;background:#fffdfbd9;backdrop-filter:blur(26px) saturate(1.55);-webkit-backdrop-filter:blur(26px) saturate(1.55);box-shadow:0 15px 40px #3a234233,0 0 0 1px #bda9bd2d inset}
+ body:has(.nav-shell-open) .app-tabbar{z-index:80}
+ body:has(.portfolio-v3) .app-tabbar>a,body:has(.detail-main) .app-tabbar>a{position:relative;display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;min-height:62px;padding:4px 0 6px;border-radius:18px;background:transparent;color:#8d7f90;font-size:10px;font-weight:600;letter-spacing:-.02em;transition:transform .2s,color .2s,background .2s}
+ body:has(.portfolio-v3) .app-tabbar>a[aria-current],body:has(.detail-main) .app-tabbar>a[aria-current]{background:transparent;color:#59365f}
+ .app-tabbar .tab-icon{display:grid;place-items:center;width:33px;height:31px;border-radius:11px;transition:background .25s,color .25s,transform .25s}
+ .app-tabbar a[aria-current] .tab-icon{background:#654568;color:#fff;box-shadow:0 4px 9px #65456838;transform:translateY(-2px)}
+ .app-tabbar .tab-label{line-height:1.1}.app-tabbar .tab-current{display:block;width:3px;height:3px;border-radius:50%;background:transparent}.app-tabbar a[aria-current] .tab-current{background:#654568}
+ .app-tabbar a:active{transform:scale(.94)}
+}
+@media(max-width:767px){
+ body:has(.portfolio-v3) .header.nav-shell,body:has(.detail-main) .header.nav-shell{width:calc(100% - 20px);height:62px;margin:8px auto 10px;padding:6px 7px;border-radius:18px}
+ body:has(.portfolio-v3) .nav-brand .brand-symbol,body:has(.detail-main) .nav-brand .brand-symbol{width:46px;height:46px;min-width:46px;min-height:46px;border-radius:13px}.nav-brand .brand-symbol img{width:36px;height:36px}
+ .nav-brand-copy strong{font-size:16px}.nav-brand-copy small{font-size:7px;letter-spacing:.05em;margin-top:4px}
+ body:has(.portfolio-v3) .nav-end .nav-contact,body:has(.detail-main) .nav-end .nav-contact{width:44px;min-height:44px;padding:0;justify-content:center;border-radius:12px}.nav-end .nav-contact span{display:none}.nav-end .menu-toggle{width:44px;height:44px;border-radius:12px}
+ body:has(.portfolio-v3) .nav.nav-sheet,body:has(.detail-main) .nav.nav-sheet{width:calc(100vw - 20px);max-height:calc(100svh - 96px - env(safe-area-inset-top,0px));padding:15px;border-radius:22px}
+ body:has(.portfolio-v3) .nav.nav-sheet>a,body:has(.detail-main) .nav.nav-sheet>a{min-height:59px;font-size:21px}
+}
+@media(max-width:370px){.nav-brand-copy small{display:none}.nav-brand-copy strong{font-size:15px}.nav-brand{gap:7px}.nav-end{gap:5px}body:has(.portfolio-v3) .app-tabbar,body:has(.detail-main) .app-tabbar{left:8px;right:8px;width:calc(100% - 16px);padding-inline:5px}.app-tabbar .tab-label{font-size:9px}}
+@media(prefers-reduced-motion:reduce){body:has(.portfolio-v3) .nav.nav-sheet>a,body:has(.detail-main) .nav.nav-sheet>a,.app-tabbar .tab-icon,.nav-end .nav-contact{transition:none!important}}

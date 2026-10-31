@@ -1,0 +1,42 @@
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-latin.woff2') format('woff2');font-style:normal;font-weight:100 1000;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-latin-italic.woff2') format('woff2');font-style:italic;font-weight:100 1000;font-display:swap}
+@font-face{font-family:'Syne';src:url('/fonts/syne-latin.woff2') format('woff2');font-style:normal;font-weight:400 800;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url('/fonts/instrument-serif-italic.woff2') format('woff2');font-style:italic;font-weight:400;font-display:swap}
+
+:root{--font-body:'DM Sans',Arial,sans-serif;--font-display:'Syne','DM Sans',sans-serif;--font-accent:'Instrument Serif',Georgia,serif;--font-label:'DM Sans',Arial,sans-serif}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body,button,input,textarea,select{font-family:var(--font-body)}
+body{font-size:15px;line-height:1.65;font-optical-sizing:auto;font-kerning:normal}
+p{line-height:1.75}
+h1,h2,h3,.film-world-title,.footer-name{font-family:var(--font-display);font-optical-sizing:auto;font-kerning:normal}
+h1,h2,h3{text-wrap:balance}
+.serif,.hero-editorial h1 em,.film-content h2 em,.film-scene em,.resume-heading em,.contact h2 em{font-family:var(--font-accent);font-style:italic;font-weight:400;letter-spacing:-.025em}
+.hero-editorial h1{font-weight:600;letter-spacing:-.078em;line-height:.96}
+.hero-editorial h1 em{font-size:1.36em;line-height:.82;letter-spacing:-.055em}
+.hero-byline,.hero-intro-bar,.hero-personal-note>span,.hero-portrait-caption>span:first-child,.hero-bottom-location,.film-kicker,.film-section-top>span:last-child,.film-world-number,.film-project-index,.film-status,.film-research-count,.film-experience-row>span,.film-education>div>span,.film-evidence,.film-endnote>span,.resume-card-top>span,.project-story dt,.eyebrow,.evidence-note{font-family:var(--font-label);font-weight:650;letter-spacing:.11em}
+.hero-intro-bar,.hero-personal-note>span,.hero-portrait-caption>span:first-child,.hero-bottom-location,.film-section-top>span:last-child,.film-status,.film-endnote>span,.resume-card-top>span{font-size:10px}
+.film-kicker,.film-world-number,.film-project-index,.film-research-count,.film-experience-row>span,.film-education>div>span{font-size:11px}
+.film-section-top>span:last-child{color:#a99f92}
+.film-world-title{font-weight:550;letter-spacing:-.055em}
+.film-world-links p,.film-project-copy>p,.film-research-list p,.film-experience-row p,.film-work-heading>p,.film-about-story>p,.profile-description,.project-story p,.project-story dd{font-size:clamp(14px,1.05vw,16px);line-height:1.75}
+.film-content h2,.resume-heading h2{font-weight:550;letter-spacing:-.065em;line-height:1.08}
+.film-project-copy h3,.film-research-list h3,.film-experience-row h3,.resume-card h3{font-weight:550;letter-spacing:-.055em;line-height:1.16}
+.film-project-copy small{font-family:var(--font-label);font-size:10px;line-height:1.6;letter-spacing:.02em;color:#a49a8b}
+.film-evidence{font-size:12px;line-height:1.7;letter-spacing:.01em;color:#aaa094}
+.hero-summary,.hero-personal-note p{font-family:var(--font-body);font-weight:400;letter-spacing:-.01em}
+.app-identity strong{font-family:var(--font-display);font-weight:600;letter-spacing:-.035em}
+.nav a,.nav-contact,.app-tabbar a,.hero-work-link,.hero-resume-link,.film-project-link,.resume-actions a,.direct-contact a{font-family:var(--font-body);font-weight:600;letter-spacing:-.01em}
+.profile-intro h1,.project-intro h1{font-weight:600;letter-spacing:-.065em;line-height:1.04}
+.profile-intro .lead,.project-intro .lead{font-family:var(--font-body);letter-spacing:-.025em}
+.project-meta h3,.relevant-experience h3,.project-story h2,.next-project a{font-family:var(--font-display);letter-spacing:-.05em}
+@media(max-width:767px){
+ body{font-size:15px}
+ .hero-editorial h1{letter-spacing:-.078em}
+ .hero-intro-bar{font-size:9px}
+ .hero-byline,.film-kicker,.film-section-top>span:last-child,.film-status,.film-endnote>span,.resume-card-top>span{font-size:10px}
+ .hero-summary,.film-world-links p,.film-project-copy>p,.film-research-list p,.film-experience-row p,.film-about-story>p,.project-story p,.project-story dd{font-size:14px;line-height:1.7}
+ .hero-portrait-caption>span:first-child{font-size:9px}
+ .film-content h2,.resume-heading h2{line-height:1.08}
+ .film-world-title{letter-spacing:-.045em}
+ .film-evidence{font-size:11px}
+}

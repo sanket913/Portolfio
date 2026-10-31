@@ -1,0 +1,25 @@
+{
+  "name": "Sanket Prajapati \u2014 Portfolio",
+  "short_name": "Sanket",
+  "description": "Development, data and intelligent systems.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fbf9f7",
+  "theme_color": "#fbf9f7",
+  "icons": [
+    {
+      "src": "/brand/icon-192-v2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/icon-512-v2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

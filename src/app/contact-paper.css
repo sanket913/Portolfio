@@ -1,0 +1,43 @@
+.portfolio-v3 .contact-paper,.detail-main .contact-paper{position:relative;isolation:isolate;overflow:hidden;margin:0;padding:clamp(90px,10vw,150px) clamp(20px,5vw,84px) clamp(45px,5vw,76px);background:#34283b!important;color:#f9f1f5}
+.portfolio-v3 .contact-paper:before,.detail-main .contact-paper:before{content:none}
+.contact-paper-glow{position:absolute;z-index:-1;width:min(100vw,1400px);aspect-ratio:1;top:-65%;right:-35%;border-radius:50%;background:radial-gradient(circle,#ac6f9866,transparent 65%);pointer-events:none}
+.contact-paper:after{content:"";position:absolute;z-index:-1;inset:0;opacity:.27;pointer-events:none;background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px);background-size:90px 90px;mask-image:linear-gradient(135deg,#000,transparent 70%)}
+.contact-paper-stage{max-width:1720px;margin:auto;filter:drop-shadow(0 30px 46px #140f1c88)}
+.contact-paper-sheet{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(340px,.65fr);min-height:620px;background:#f4ece4;color:#342934;clip-path:polygon(0 13px,5% 5px,10% 12px,15% 3px,20% 10px,25% 4px,30% 12px,35% 5px,40% 13px,45% 4px,50% 11px,55% 5px,60% 13px,65% 3px,70% 11px,75% 5px,80% 13px,85% 4px,90% 12px,95% 5px,100% 11px,100% calc(100% - 12px),95% calc(100% - 4px),90% calc(100% - 11px),85% calc(100% - 3px),80% calc(100% - 13px),75% calc(100% - 5px),70% calc(100% - 11px),65% calc(100% - 4px),60% calc(100% - 12px),55% calc(100% - 5px),50% calc(100% - 13px),45% calc(100% - 4px),40% calc(100% - 11px),35% calc(100% - 5px),30% calc(100% - 13px),25% calc(100% - 4px),20% calc(100% - 11px),15% calc(100% - 5px),10% calc(100% - 12px),5% calc(100% - 4px),0 calc(100% - 11px))}
+.contact-paper-sheet:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.contact-paper-content{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:55px;padding:clamp(55px,5vw,88px) clamp(35px,5vw,90px);background:radial-gradient(circle at 95% 8%,#f9f4e6,transparent 52%)}
+.contact-paper-kicker,.contact-paper-signature{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:750;letter-spacing:.12em;color:#815e73}
+.contact-paper-kicker i{width:8px;height:8px;background:#a66d88;border-radius:50%;box-shadow:0 0 0 6px #a66d8829}
+.contact-paper-message{max-width:900px}
+.contact-paper-message>p{font-size:12px;font-weight:750;letter-spacing:.13em;color:#956e83;line-height:1.5}
+.portfolio-v3 .contact-paper h2,.detail-main .contact-paper h2{font-family:Inter,Arial,sans-serif;font-size:clamp(64px,6.5vw,112px);line-height:1.02;letter-spacing:-.078em;font-weight:650;color:#342934;margin:24px 0 28px}
+.portfolio-v3 .contact-paper h2 em,.detail-main .contact-paper h2 em{font-family:Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.08em;color:#a26b87}
+.contact-paper-message>span{display:block;max-width:570px;font-size:clamp(18px,1.35vw,22px);line-height:1.56;color:#6e5f6a}
+.contact-paper-signature{margin-top:auto;font-size:11px;gap:11px}.contact-paper-signature span{font-size:16px}
+.contact-paper-ticket{position:relative;display:flex;flex-direction:column;min-width:0;padding:clamp(55px,5vw,88px) clamp(28px,3.5vw,62px);border-left:2px dashed #a06d866e;background:#e7d5db}
+.contact-paper-ticket:before,.contact-paper-ticket:after{content:"";position:absolute;z-index:2;left:-15px;width:28px;height:28px;border-radius:50%;background:#34283b}
+.contact-paper-ticket:before{top:-13px}.contact-paper-ticket:after{bottom:-13px}
+.contact-paper-tear-progress{position:absolute;z-index:2;left:-2px;top:0;width:2px;height:100%;background:#975572;transform-origin:top center}
+.contact-paper-ticket-top,.contact-paper-ticket-foot{display:flex;justify-content:space-between;gap:15px;font-size:11px;font-weight:750;letter-spacing:.11em;color:#7d5d73}
+.contact-paper-ticket-center{margin:auto 0;padding:40px 0 24px}.contact-paper-ticket-center>span{font-size:12px;font-weight:750;letter-spacing:.11em;color:#805b75}
+.contact-paper-ticket-center strong{display:block;font-size:clamp(42px,3.5vw,65px);line-height:1.06;letter-spacing:-.065em;color:#36283a;margin:23px 0 17px}
+.contact-paper-ticket-center strong span{color:#a46b88}.contact-paper-ticket-center p{font-size:17px;line-height:1.5;color:#6f5b6b}
+.contact-paper .direct-contact{display:grid;gap:11px;margin:0 0 36px;z-index:3}
+.portfolio-v3 .contact-paper .direct-contact a,.detail-main .contact-paper .direct-contact a{display:flex;justify-content:space-between;gap:13px;min-height:57px;padding:14px 18px;border-radius:9px;border:1px solid #4e3b50;color:#f9f3f7;background:#4b3650;font-size:15px;font-weight:700;transition:transform .25s ease,background .25s ease}
+.portfolio-v3 .contact-paper .direct-contact .contact-whatsapp,.detail-main .contact-paper .direct-contact .contact-whatsapp{background:#f7f0ec;color:#3d3042;border-color:#baa7b4}
+.portfolio-v3 .contact-paper .direct-contact a:hover,.detail-main .contact-paper .direct-contact a:hover{transform:translateX(4px);background:#684c6e;color:#fff}
+.portfolio-v3 .contact-paper .direct-contact .contact-whatsapp:hover,.detail-main .contact-paper .direct-contact .contact-whatsapp:hover{background:#fff;color:#3d3042}
+.contact-paper-ticket-foot{display:block;font-size:10px}
+.contact-paper-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1720px;margin:40px auto 0}
+.contact-paper-bottom>div:first-child{display:flex;align-items:center;gap:13px;min-width:0}
+.contact-paper-bottom .email{font-size:clamp(15px,1.25vw,19px);font-weight:600;color:#f9f1f5;text-decoration:underline;text-decoration-color:#bea5b5;text-underline-offset:7px;overflow-wrap:anywhere}
+.contact-paper-bottom .copy-email{display:grid;place-items:center;width:44px;height:44px;min-width:44px;padding:0;border:1px solid #ffffff57;border-radius:50%;background:transparent;color:#f9f1f5}
+.contact-paper-bottom .copy-email:hover{background:#ffffff24}
+.contact-paper-bottom .copy-status{font-size:13px;color:#eac9db}
+.contact-paper-bottom .contact-social{display:flex;gap:28px;align-items:center;margin:0}
+.contact-paper-bottom .contact-social a{display:flex;align-items:center;gap:10px;color:#f9f1f5;font-size:15px;font-weight:650}
+.contact-paper-bottom .contact-social a:hover{color:#f0bcd3}
+@media(max-width:1050px){.contact-paper-sheet{grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr)}.contact-paper-content{padding:56px 45px}.contact-paper-ticket{padding:56px 35px}.portfolio-v3 .contact-paper h2,.detail-main .contact-paper h2{font-size:clamp(57px,6.4vw,80px)}}
+@media(max-width:750px){.portfolio-v3 .contact-paper,.detail-main .contact-paper{padding:74px 20px 100px}.contact-paper-sheet{display:block;min-height:0}.contact-paper-content{gap:40px;padding:60px 27px 48px}.contact-paper-message>p{font-size:11px}.portfolio-v3 .contact-paper h2,.detail-main .contact-paper h2{font-size:clamp(49px,11vw,72px);margin:22px 0}.contact-paper-message>span{font-size:17px}.contact-paper-signature{font-size:10px}.contact-paper-ticket{border-left:0;border-top:2px dashed #a06d866e;padding:42px 27px 50px;min-height:390px}.contact-paper-ticket:before,.contact-paper-ticket:after{top:-15px;left:auto}.contact-paper-ticket:before{left:-14px}.contact-paper-ticket:after{right:-14px;bottom:auto}.contact-paper-tear-progress{left:0;top:-2px;width:100%;height:2px;transform:none!important}.contact-paper-ticket-center{padding:40px 0 25px}.contact-paper-ticket-center strong{font-size:clamp(42px,9vw,60px)}.contact-paper-bottom{display:block;margin-top:32px}.contact-paper-bottom .contact-social{margin-top:23px}.contact-paper-bottom>div:first-child{flex-wrap:wrap}.contact-paper .direct-contact{margin-bottom:25px}}
+@media(max-width:380px){.contact-paper-content{padding-inline:22px}.contact-paper-ticket{padding-inline:22px}.portfolio-v3 .contact-paper h2,.detail-main .contact-paper h2{font-size:47px}.contact-paper-ticket-center strong{font-size:41px}.contact-paper-kicker{font-size:11px}.contact-paper-bottom .email{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.contact-paper .direct-contact a{transition:none!important}}

@@ -1,0 +1,94 @@
+/* Readable type scale for the current portfolio, detail pages, and shared shell. */
+body{font-size:16px}
+.portfolio-v3,.detail-main{font-size:16px;line-height:1.6}
+.v3-eyebrow,.v3-section-label{font-size:13px;letter-spacing:.08em;line-height:1.5}
+.v3-hero-location{font-size:12px}
+.v3-hero-copy>p{font-size:clamp(18px,1.45vw,22px);line-height:1.62}
+.v3-button{font-size:15px}
+.v3-hero-footer{font-size:12px;letter-spacing:.06em}
+.v3-photo-note span{font-size:12px;letter-spacing:.08em}
+.v3-photo-note span:last-child{font-size:11px;line-height:1.45;letter-spacing:.02em}
+.v3-photo-orbit{font-size:11px}
+.v3-section-heading p{font-size:18px;line-height:1.65}
+.v3-profile-top{font-size:12px;letter-spacing:.04em}
+.v3-profile-bottom p{font-size:16px;line-height:1.6}
+.v3-profile-bottom>span{font-size:15px}
+.v3-data-art>span{font-size:12px;letter-spacing:.08em}
+.v3-data-art>small{font-size:11px}
+.v3-project-view,.v3-project-meta{font-size:12px;letter-spacing:.06em}
+.v3-project-info p{font-size:clamp(17px,1.4vw,21px)}
+.v3-project-info>a{font-size:16px}
+.v3-work-outro{font-size:16px;line-height:1.6}
+.v3-about-photo span{font-size:12px}
+.v3-about-copy>p{font-size:17px;line-height:1.7}
+.v3-about-copy>.v3-about-lead{font-size:clamp(20px,1.6vw,24px)}
+.v3-education>h3,.v3-education>div>span{font-size:13px}
+.v3-education strong{font-size:16px;line-height:1.4}
+.v3-education p small{font-size:14px;line-height:1.5}
+.v3-education b small{font-size:12px}
+.journal-heading>p{font-size:17px;line-height:1.65}
+.journal-image>span{font-size:11px}
+.journal-caption h3{font-size:22px}
+.journal-caption p{font-size:15px;line-height:1.6}
+.photo-dialog-bar{font-size:12px}
+.photo-dialog-foot p,.photo-dialog-foot a{font-size:15px}
+.photo-dialog-foot h3{font-size:20px}
+.portfolio-v3 .resume-heading>p,.detail-main .resume-heading>p{font-size:17px;line-height:1.65}
+.resume-card-top>span{font-size:12px;letter-spacing:.05em}
+.portfolio-v3 .resume-card h3,.detail-main .resume-card h3{font-size:27px}
+.portfolio-v3 .resume-card>p,.detail-main .resume-card>p{font-size:16px;line-height:1.65}
+.portfolio-v3 .resume-actions a,.detail-main .resume-actions a{font-size:15px;min-height:46px}
+.portfolio-v3 .direct-contact a,.detail-main .direct-contact a{font-size:16px}
+.portfolio-v3 .contact .contact-question,.detail-main .contact .contact-question{font-size:18px}
+.contact-bottom p{font-size:13px;line-height:1.6}
+.contact-social a{font-size:15px}
+.footer-name{font-size:13px}
+.footer-name span,footer p,footer>a:last-child{font-size:12px;line-height:1.5}
+.detail-main .eyebrow{font-size:13px;letter-spacing:.08em}
+.detail-main .profile-description{font-size:17px;line-height:1.7}
+.detail-main .profile-intro .lead,.detail-main .project-intro .lead{font-size:clamp(20px,2vw,24px)}
+.detail-main .skill-list span{font-size:16px;line-height:1.5}
+.detail-main .project-stack span{font-size:14px;line-height:1.5}
+.detail-main .section-heading>p,.detail-main .relevant-experience>p{font-size:17px;line-height:1.65}
+.detail-main .project-meta small{font-size:13px;line-height:1.55}
+.detail-main .project-meta h3{font-size:24px}
+.detail-main .project-story p,.detail-main .project-story dd{font-size:17px;line-height:1.7}
+.detail-main .project-story dt,.detail-main .evidence-note{font-size:14px;line-height:1.6}
+.detail-main .project-story a{font-size:16px}
+.detail-main .next-project p{font-size:13px}
+.detail-main .profile-switcher a{font-size:14px}
+body:has(.portfolio-v3) .nav.nav-sheet>a,body:has(.detail-main) .nav.nav-sheet>a{font-size:13px}
+.nav-brand-copy small{font-size:10px;letter-spacing:.03em}
+.nav-availability{font-size:10px;letter-spacing:.04em}
+body:has(.portfolio-v3) .nav-end .nav-contact,body:has(.detail-main) .nav-end .nav-contact{font-size:13px}
+@media(max-width:1199px){
+ .nav-sheet-top{font-size:11px}
+ .nav-sheet .nav-link-index{font-size:12px}
+ .nav-sheet-foot{font-size:11px;letter-spacing:.04em}
+ body:has(.portfolio-v3) .nav.nav-sheet .nav-sheet-foot a,body:has(.detail-main) .nav.nav-sheet .nav-sheet-foot a{font-size:13px;min-height:44px}
+ body:has(.portfolio-v3) .app-tabbar>a,body:has(.detail-main) .app-tabbar>a{font-size:11px}
+}
+@media(max-width:767px){
+ .v3-eyebrow,.v3-section-label{font-size:12px}
+ .v3-hero-copy>p{font-size:17px;line-height:1.65}
+ .v3-button{font-size:14px}
+ .v3-actions{align-items:stretch}
+ .v3-actions .v3-button{width:100%;justify-content:space-between}
+ .v3-hero-footer{font-size:11px}
+ .v3-photo-note span{font-size:11px}
+ .v3-photo-note span:last-child{font-size:10px}
+ .v3-section-heading p{font-size:17px}
+ .v3-profile-top{font-size:11px}
+ .v3-profile-bottom p,.v3-project-info p,.v3-about-copy>p{font-size:16px}
+ .v3-education strong{font-size:15px}
+ .v3-education p small{font-size:13px}
+ .portfolio-v3 .resume-heading>p,.detail-main .resume-heading>p{font-size:16px}
+ .detail-main .profile-description,.detail-main .project-story p,.detail-main .project-story dd{font-size:16px}
+ .detail-main .section-heading>p,.detail-main .relevant-experience>p{font-size:16px}
+ .detail-main .profile-switcher a{font-size:13px}
+ .nav-brand-copy small{font-size:9px}
+}
+@media(max-width:370px){
+ .v3-button{font-size:13px}
+ body:has(.portfolio-v3) .app-tabbar>a,body:has(.detail-main) .app-tabbar>a{font-size:10px}
+}
