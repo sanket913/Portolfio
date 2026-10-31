@@ -25,7 +25,7 @@ Three supplied PDFs are copied without changes to `public/resumes/`. Visitors ca
 ## Deploy on Vercel
 
 1. Sign in to [Vercel](https://vercel.com/) with GitHub, choose **Add New → Project**, and import [`sanket913/Portolfio`](https://github.com/sanket913/Portolfio).
-2. Keep the repository root as the Root Directory. The project uses the **Next.js** preset, `npm run build`, and the static `out` directory; these settings are also declared in `vercel.json`.
+2. Keep the repository root as the Root Directory. This project builds with Next.js but deploys its static export, so `vercel.json` selects the **Other** preset, runs `npm run build`, and serves the `out` directory. Leave any dashboard overrides disabled so the repository settings apply.
 3. In Project Settings → Environment Variables, keep **Automatically expose System Environment Variables** enabled so Vercel supplies `VERCEL_PROJECT_PRODUCTION_URL` for the sitemap and metadata. For a custom domain, optionally set `NEXT_PUBLIC_SITE_URL` to the full production URL, such as `https://your-domain.com`, for Production and redeploy.
 4. Select **Deploy**, then verify the homepage, one profile, one project, a resume PDF, WhatsApp/email links, and `/sitemap.xml` at the resulting URL. Connecting the repository makes later pushes to the production branch deploy automatically.
 
